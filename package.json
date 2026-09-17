@@ -1,0 +1,27 @@
+{
+	"name": "@snowy/api-client",
+	"version": "0.2.0",
+	"description": "可配置的统一后端请求客户端：微服务网关路由、业务信封解码、鉴权注入、取消管理与平台适配钩子",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": ["dist", "README.md"],
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"typecheck": "tsc -p tsconfig.json --noEmit",
+		"test": "bun test ./tests",
+		"prepack": "bun run build"
+	},
+	"peerDependencies": { "ky": "^1.14.0" },
+	"devDependencies": { "ky": "^1.14.2", "typescript": "^5.9.3" },
+	"engines": { "node": ">=20.19" },
+	"keywords": ["ky", "http-client", "gateway", "api"],
+	"license": "MIT"
+}
