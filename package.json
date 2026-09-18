@@ -23,5 +23,11 @@
 	"devDependencies": { "ky": "^1.14.2", "typescript": "^5.9.3" },
 	"engines": { "node": ">=20.19" },
 	"keywords": ["ky", "http-client", "gateway", "api"],
+	"homepage": "https://github.com/zhongjiaguo001/fronted-api-client#readme",
+	"bugs": { "url": "https://github.com/zhongjiaguo001/fronted-api-client/issues" },
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zhongjiaguo001/fronted-api-client.git"
+	},
 	"license": "MIT"
 }
