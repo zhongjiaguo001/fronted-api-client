@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "xby-fronted-api-client",
+      "name": "@xby/frontend-api",
       "devDependencies": {
         "ky": "^1.14.2",
         "typescript": "^5.9.3",
