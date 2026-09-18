@@ -1,19 +1,19 @@
-# @snowy/api-client
+# xby-fronted-api-client
 
 基于 [ky](https://github.com/sindresorhus/ky) 的统一后端请求客户端。把「网关前缀路由、`code/data/msg` 信封解码、Token 注入、在途请求取消、成功/失败提示」做成可配置内核，把「弹窗、跳登录、Tauri fetch、文件保存」等平台细节留给调用方通过回调注入。
 
 ## 安装
 
 ```bash
-bun add @snowy/api-client ky
+bun add xby-fronted-api-client ky
 # 本地联调（同级目录）
-bun add @snowy/api-client@link:../snowy-api-client
+bun add xby-fronted-api-client@link:../snowy-api-client
 ```
 
 ## 快速开始
 
 ```ts
-import { createApiClient } from '@snowy/api-client';
+import { createApiClient } from 'xby-fronted-api-client';
 
 export const client = createApiClient({
 	baseUrl: () => import.meta.env.PUBLIC_API_URL,

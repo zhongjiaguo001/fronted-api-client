@@ -1,5 +1,5 @@
 {
-	"name": "@snowy/api-client",
+	"name": "xby-fronted-api-client",
 	"version": "0.2.0",
 	"description": "可配置的统一后端请求客户端：微服务网关路由、业务信封解码、鉴权注入、取消管理与平台适配钩子",
 	"type": "module",
