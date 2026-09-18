@@ -76,7 +76,8 @@ export interface DownloadOptions extends CustomRequestOptions {
 export interface ApiClientOptions {
 	/** 必须是绝对 HTTP(S) 地址，可包含路径前缀。 */
 	baseUrl: string | (() => string);
-	gateway?: GatewayOptions | false;
+	/** 网关映射；省略时不改写地址。路由表完全由调用方提供。 */
+	gateway?: GatewayOptions;
 	/** 完全接管地址解析时使用，优先于 gateway。 */
 	resolveUrl?: (path: string, baseUrl: string) => string;
 	fetch?: typeof globalThis.fetch;
